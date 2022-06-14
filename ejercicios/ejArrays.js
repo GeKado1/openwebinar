@@ -11,8 +11,7 @@ for (var i = 0; i < arrayEj.length; i++) {
 /* 2 */
 var resultadoSuma = 0;
 
-console.log("La suma de todos los números es:")
 for (var i = 0; i < arrayEj.length; i++) {
     resultadoSuma = resultadoSuma + arrayEj[i];
 }
-console.log(resultadoSuma);
+console.log("La suma de todos los números es: " + resultadoSuma);
