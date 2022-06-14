@@ -8,6 +8,6 @@
 4) Arrays instanciados de diversos modos y como llamarlo
 5) Bucles en un array
 
- Ejercicios (Soluciones en la carpeta de ejercicios)
+~ Ejercicios (Soluciones en la carpeta de ejercicios)
 1) Muestra todos los números de un array
 2) Suma todos los números de un array
