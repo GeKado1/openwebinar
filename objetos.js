@@ -69,5 +69,6 @@ console.log(array3[4])*/ //ahora tiene valor
 var colores = ["verde", "negro", "azul"];
 
 for (let i = 0; i < colores.length; i++) {
-    
+    console.log(colores[i]);
+    console.log(i);
 }
