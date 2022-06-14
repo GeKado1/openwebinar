@@ -1,4 +1,5 @@
 # openwebinar
+Se requiere tener el Node.js y el npm.
 (Los ejemplos están comentados, si quieres ver como funciona puedes descomentar)
 
 ~ Objetos
