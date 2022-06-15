@@ -16,8 +16,9 @@ Se requiere tener instalados el Node.js y el npm.
 ~ DOM
 1) Cogiendo elementos con id y sin id; aplicación de estilos de diversas maneras
 
-- Ejercicios (Soluciones en la carpeta de ejercicios)
-1) Crear un toDoList (una lista ul) con un array mediante JavaScript y eliminar un elemento de esa lista dentro de un par de segundos
-
 ~ Eventos
 1) Diversos tipos de eventos como el de keypressed, click, mouseover y también personalizados
+
+- Ejercicios (Soluciones en la carpeta de ejercicios)
+1) Crear un toDoList (una lista ul) con un array mediante JavaScript y eliminar un elemento de esa lista dentro de un par de segundos
+2) Añadir una tarea a la lista mediante un input y un botón

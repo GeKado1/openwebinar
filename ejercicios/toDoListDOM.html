@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DOM</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>DOM</title>
 
-        <style>
-            #mi_id_de_prueba {
-                color: red;
-            }
-        </style>
-    </head>
+		<style>
+			#mi_id_de_prueba {
+				color: red;
+			}
+		</style>
+	</head>
 
-    <body>
-        <p>Mi primera clase practica de DOM</p>
+	<body>
+		<p>Mi primera clase practica de DOM</p>
 
-        <ul id="toDoList"></ul>
+		<input type="text" placeholder="Nueva Tarea" id="nuevaTarea"/>
+		<button id="btnSubmit">Añadir tarea</button>
 
-        <script type="text/javascript">
-            var parrafo = document.getElementsByTagName('p');
+		<ul id="toDoList"></ul>
 
-            parrafo[0].style.color = 'blue';
-            parrafo[0].style.backgroundColor = 'yellow';
+		<script type="text/javascript">
+			var parrafo = document.getElementsByTagName('p');
 
-            var tareas = [
-                "Hacer la colada",
-                "Preparar la cena",
-                "Tirar la basura"
-            ];
+			parrafo[0].style.color = 'blue';
+			parrafo[0].style.backgroundColor = 'yellow';
 
-            var toDoList = document.querySelector('#toDoList');
+			var tareas = [
+				"Hacer la colada",
+				"Preparar la cena",
+				"Tirar la basura"
+			];
 
-            for (var i = 0; i < tareas.length; i++) {
-                var tarea = tareas[i];
-                var li = document.createElement('li');
+			var toDoList = document.querySelector('#toDoList');
 
-                li.textContent = tarea;
-                li.id = 'elemento_' + i;
+			for (var i = 0; i < tareas.length; i++) {
+				var tarea = tareas[i];
+				append(tarea, i); //Función append creada más abajo
+			}
 
-                toDoList.appendChild(li);
-            }
+			setTimeout(function() {
+				var elementoEliminar = document.getElementById('elemento_2');
+				toDoList.removeChild(elementoEliminar);
+			}, 2000);
 
-            setTimeout(function() {
-                var elementoEliminar = document.getElementById('elemento_2');
-                toDoList.removeChild(elementoEliminar);
-            }, 2000);
-        </script>
-    </body>
+			var id = 3;
+			var btnSubmit = document.getElementById('btnSubmit');
+			btnSubmit.addEventListener('click', function() {
+				var tareaAnadir = document.getElementById('nuevaTarea').value;
+				append(tareaAnadir, id); //Función append creada más abajo
+				id++;
+			})
+
+			//Función para añadir un elemento en la lista
+			function append(tarea, id) {
+				var li = document.createElement('li');
+				li.textContent = tarea;
+				li.id = 'elemento_' + id;
+				toDoList.appendChild(li);
+			}
+		</script>
+	</body>
 </html>
