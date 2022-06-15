@@ -18,3 +18,6 @@ Se requiere tener instalados el Node.js y el npm.
 
 - Ejercicios (Soluciones en la carpeta de ejercicios)
 1) Crear un toDoList (una lista ul) con un array mediante JavaScript y eliminar un elemento de esa lista dentro de un par de segundos
+
+~ Eventos
+1) Diversos tipos de eventos como el de keypressed, click, mouseover y también personalizados

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Eventos</title>
+	</head>
+
+	<body>
+		<h1>Eventos</h1>
+
+		<button id="cambiarFondo">Cambiar fondo</button>
+
+		<script type="text/javascript">
+			/*Evento que se ejecuta cuando una tecla es presionada*/
+			document.addEventListener("keydown", function(evento) {
+				console.log(evento);
+			});
+
+			/*Evento mediante un boton*/
+			var button = document.getElementById("cambiarFondo");
+			
+			function random(numMax) {
+				return Math.round(Math.random() * numMax);
+			}
+
+			button.addEventListener("click", function(evento) {/*Prueba con mousemove en vez de click*/
+				console.log(evento);
+				var randomColor = [
+					random(255),
+					random(255),
+					random(255)
+				];
+
+				document.body.style.backgroundColor = "rgb(" + randomColor[0] + ", " + randomColor[1] + ", " + randomColor[2] + ")";
+			});
+
+			document.addEventListener('customEvent', function(evento) {
+				console.log(evento);
+				console.log(evento.detail);
+			})
+
+			var event = new CustomEvent('customEvent', {'detail':'Hola persona'});
+
+			document.dispatchEvent(event);
+		</script>
+	</body>
+</html>
