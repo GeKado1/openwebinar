@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+
+        <style>
+            #mi_id_de_prueba {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>Mi primera clase practica de DOM</p>
+
+        <ul id="toDoList"></ul>
+
+        <script type="text/javascript">
+            var parrafo = document.getElementsByTagName('p');
+
+            parrafo[0].style.color = 'blue';
+            parrafo[0].style.backgroundColor = 'yellow';
+
+            var tareas = [
+                "Hacer la colada",
+                "Preparar la cena",
+                "Tirar la basura"
+            ];
+
+            var toDoList = document.querySelector('#toDoList');
+
+            for (var i = 0; i < tareas.length; i++) {
+                var tarea = tareas[i];
+                var li = document.createElement('li');
+
+                li.textContent = tarea;
+                li.id = 'elemento_' + i;
+
+                toDoList.appendChild(li);
+            }
+
+            setTimeout(function() {
+                var elementoEliminar = document.getElementById('elemento_2');
+                toDoList.removeChild(elementoEliminar);
+            }, 2000);
+        </script>
+    </body>
+</html>
