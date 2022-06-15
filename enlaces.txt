@@ -1,0 +1,8 @@
+Instalación de node:
+https://nodejs.org/es/
+
+npm install:
+https://www.w3schools.com/whatis/whatis_npm.asp
+
+Expresiones regulares:
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions

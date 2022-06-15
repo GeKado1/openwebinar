@@ -23,6 +23,5 @@ Se requiere tener instalados el Node.js y el npm.
 1) Crear un toDoList (una lista ul) con un array mediante JavaScript y eliminar un elemento de esa lista dentro de un par de segundos
 2) Añadir una tarea a la lista mediante un input y un botón
 
-
 - Expresiones regulares
 1) Comprovación de texto con expresiones regulares
