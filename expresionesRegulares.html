@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Expresiones regulares</title>
+	</head>
+
+	<body>
+		<p>Expresiones regulares</p>
+
+		<script type="text/javascript">
+			var banda = "AC/DC";
+			var regExpBanda = /\//g;
+
+			console.log(banda.search(regExpBanda)); //Search busca la posició de la expresión regular (devuelve -1 sino encuentra la expresión)
+
+			var texto = "hola mundo";
+			var regExpTexto = /^[a-z]$/g;
+
+			console.log(texto.search(regExpTexto)); //Search busca la posició de la expresión regular (devuelve -1 sino encuentra la expresión)
+			console.log(regExpTexto.test(texto)); //Comprueba si el text coincide con la expresión regular (devolverá false con el ^ puesto en la expresión)
+
+			var texto2 = "bienvenidos";
+			var regExpTexto2 = /s+$/;
+			
+			console.log(texto2.search(regExpTexto2)); //Search busca la posició de la expresión regular (devuelve -1 sino encuentra la expresión)
+			console.log(regExpTexto2.test(texto2)); //Comprueba si el text coincide con la expresión regular (devolverá false con el ^ puesto en la expresión)
+		</script>
+	</body>
+</html>
