@@ -12,3 +12,6 @@ Se requiere tener instalados el Node.js y el npm.
 ~ Ejercicios (Soluciones en la carpeta de ejercicios)
 1) Muestra todos los números de un array
 2) Suma todos los números de un array
+
+~ DOM
+1) Cogiendo elementos con id y sin id; aplicación de estilos de diversas maneras

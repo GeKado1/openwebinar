@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+
+        <style>
+            #mi_id_de_prueba {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id="parrafo">Mi primera clase practica de DOM</p> <!-- p con id -->
+        <p>Mi primera clase practica de DOM</p> <!-- p sin id -->
+
+        <script type="text/javascript">
+            var parrafo = document.getElementById("parrafo");
+            var parrafo2 = document.getElementsByTagName('p');
+
+            /* Ver que devuelve las variables de parrafo i parrafo2 mediante consola
+            console.log(parrafo.innerText);
+            console.log(parrafo2);*/
+
+            //parrafo2[1].id = 'mi_id_de_prueba'; Asignando la id mediante JavaScript y aplicar su estilo
+
+            //Aplicando un estilo sin id
+            parrafo2[1].style.color = 'blue';
+            parrafo2[1].style.backgroundColor = 'yellow';
+        </script>
+    </body>
+</html>
