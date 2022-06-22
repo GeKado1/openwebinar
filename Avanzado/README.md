@@ -18,3 +18,8 @@
     - Un callback es una función como parámetro llamada por la función por la función objetivo al completar su tarea con éxito siempre que haya finalizado el bucle de eventos
     - El uso del manejador then ejecuta el callback dado e implícita o explícitamente devuelve una promesa que el resto de manejadores esperarán a ver resuelta
     - Los manejadores then i catch actúan como un bloque try...catch que abarca a todo el encadenamiento que quiera hacerse en la promesa
+
+~ Async/Await
+    - Una función asíncrona en JavaScript es una función de palabra clave async que se ejecuta paralelamente y devuelve una promesa
+    - En combinación con la palabra clave await las funciones asíncronas pueden parar su ejecución hasta la resolución de sus tareas asíncronas
+    - Es posible reescribir cualquier encadenamiento de promesas como un flujo aparentemente síncrono en una función declarada async
